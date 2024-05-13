@@ -22,4 +22,5 @@ fn main() {
 
     let cold = Temperature::freezing();
     cold.show_temp();
+    //test
 }
