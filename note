@@ -279,3 +279,27 @@ Standard Library
     Will open web browser
 
 
+=========================================================
+
+Result
+
+  A data type that contains one of two types of data:
+    "Successful" data
+      The operation was completed
+    "Error" data
+      The operation failed
+  Used in scenarios where an action needs to be taken,
+  but has the possibility of failure
+    Copying a filled
+    Connectin to a website
+
+      enum Result<T, E>{
+        Ok(T),
+        Err(E)
+      }
+
+    Recap
+      Useful when working with functionality that can potentially fail
+      Use Result<T, E> when working with results
+
+=========================================================
