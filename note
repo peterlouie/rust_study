@@ -303,3 +303,81 @@ Result
       Use Result<T, E> when working with results
 
 =========================================================
+
+Hashmap
+
+  Collection that stores data as key-value pairs
+    Data is located using the "key"
+    The data is the "value"
+  Similar to definitions in a dictionary
+  Very fast to retrieve data using the key
+
+  Recap
+    Store information as key-value pairs
+      "Key" is used to access the "value"
+    Very fast to insert & find data using key
+    Useful when you need to find information and known exactly 
+    where it is (via the key)
+
+=========================================================
+
+NOTE: this topics is related Map combinator most of the time use
+      closures
+      Combinator provide you an easy method to modify data
+      Can change the behavior based on data on hand
+
+Closures
+  
+  Anonymous function
+  Convinient since you already not creating new function
+  e.g. let add = |a, b| a + b;
+  
+
+Map Combinator
+  
+  can call to chain a function
+  can be use in vec!
+
+
+Option Combinator
+  
+    can replace match
+    it is the method list used in Option<>
+
+  NOTE: b18_optioncombinator have a test code
+
+Iterator
+
+  Simple way to traverse data structure
+  Do not execute anything just a configuration step
+  iter.min()
+  iter.max()
+  iter.take()
+  iter.filter()
+  iter.last()
+  iter.count()
+
+=========================================================
+
+Range
+  
+  Range is useful when you need consecutive values
+  1..=3 
+  1..4
+  'a'..='f'
+  
+=========================================================
+
+if let
+
+  Only applicable when matching one thing
+  Searching for one thing
+
+while let
+
+=========================================================
+
+Module
+
+  Separate your program on other files
+  Think module as individual file

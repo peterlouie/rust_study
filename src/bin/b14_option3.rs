@@ -31,7 +31,21 @@ fn try_access(employee: &Employee) -> Result<(), String> {
     }
 }
 
-fn main() {
-    todo!();
+fn print_access(employee: &Employee) -> Result<(), String> {
+    try_access(employee)?;
+    println!("access ok");
+    Ok(())
 }
 
+fn main() {
+    let manager = Employee {
+        position: Position::Manager,
+        status: Status::Terminated,
+    };
+
+    //using match with a function
+    match print_access(&manager) {
+        Err(e) => println!("access denied: {:?}", e),
+        _ => (),
+    }
+}
