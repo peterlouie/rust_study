@@ -381,3 +381,57 @@ Module
 
   Separate your program on other files
   Think module as individual file
+
+  inline module
+    use greet::hello;
+    use msg::{capitalize, exciting, trim};
+    let two_plus_two = math::add(2, 2);
+
+=========================================================
+
+Testing
+
+  Rust is testing is aborting the program
+  When the program aborted the test fail
+ 
+  assert_eq!(result, expected, "message to read")
+
+  safety net when doing small changes
+  Write your test after you made your function
+
+=========================================================
+
+External Crates
+
+  to include other's program to increase your productivity
+  and to make easy create complex application
+
+  example:
+    [dependencies]
+    humantime = "2.1.0"
+
+=========================================================
+
+External Module
+  
+  Allows code to be compartmentalized
+    Organized source code management
+    Better collaboration
+
+  More intuitive coding
+    Quickly identify where imported code is used
+
+Module Detail
+
+  Can have any name
+  Hierarchical organization
+  Private by default
+    Use pub keyword to make a module public
+  
+  External modules can be a:
+    Directory
+      Must contain mod.res 
+      Can contain additional modules
+    File
+
+
