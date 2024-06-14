@@ -8,6 +8,9 @@ fn main() {
     println!("{} local time", local);
     println!("{} utc time", utc);
 
-    print!("{:?}", local.format("%Y-%m-%d %H:%M:%S").to_string())
-}
+    print!("{:?}", local.format("%Y-%m-%d %H:%M:%S").to_string());
 
+    let r = 24;
+
+    println!("{:?}", r);
+}
