@@ -434,4 +434,51 @@ Module Detail
       Can contain additional modules
     File
 
+  Recap
+    Modules are Organized hierarchically
+      Use super to go up one level 
+      Use crate to start from the top 
+    The as keywork can be used to create an alias for a module
+    The mod keyword is used to  declare a module
+      No curly braces for external modules
+    Modules can be re-exported with the use keyword
+    pub indicates the module may be accessed from anywhere
+      Omitted pub restricts access to only the containing module and 
+      sub-modules
+
+Project
+  Interactive bill application
+
+About
+
+  Command line application to track bills / expenditure
+    Add, Edit, View, Remove
+  Purposefully simple 
+    Focus on working with Rust:
+      enums, Option, Result, match, iterators, etc
+      Ownership / Borrowing issues 
+      Mutability
+  Objectives:
+    Implement previoustly covered materials in a larger context 
+      Solidify concepts before moving to more advanced material 
+
+=========================================================
+
+Traits
+
+  A way to specify that some functionality exists
+  Used to standardize functionality across mutltiple different types
+    Standardization permits functions to operate on multiple 
+    different types
+      Standardization permits functions to operate on multiple 
+      different types 
+        Code deduplication
+
+Recap
+  
+    Traits define similar functionality for different types
+    Traits functions are just regular functions 
+      Can accept arguments and return values
+    Use impl Traits as a funciton arguments to pass data via trait
+
 
