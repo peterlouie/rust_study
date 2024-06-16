@@ -481,4 +481,40 @@ Recap
       Can accept arguments and return values
     Use impl Traits as a funciton arguments to pass data via trait
 
+    Traits allow you to share the functions around your program
+
+=========================================================
+
+What Are Generic Functions?
+
+  A way to write a function that can have a single parameter
+  with multiple data types
+  Trait is used as function parameter instead of data type
+    Function depends on existence of functions declare by trait
+  Less code to write
+    Automatically works when new data types are introduce
+
+Recap
+
+  Generics let you write one function to work with multiple
+  types of data
+  Generic functions are "bound" or "constrained" by the traits 
+    Only able to work with data that implements the traits
+  Three syntaxes available:
+    fn func(param: impl Trait) {}
+    fn func<T: Trait>(param: T) {}
+    fn func<T>(param: T) where T: Trait {}
+
+=========================================================
+
+Generic Structure
+
+  Store data of any type within a structure 
+    Trait bounds restrict the type of data the structure
+    can utilize 
+      Also known as "generic constraints"
+  Useful when making your own data collections
+  Reduces technical debt as program expands
+    New data types can utilize generic structures
+    and be easily integrated into the program
 
